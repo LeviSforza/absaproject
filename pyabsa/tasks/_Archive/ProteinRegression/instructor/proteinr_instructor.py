@@ -37,8 +37,8 @@ from pyabsa.framework.tokenizer_class.tokenizer_class import (
 from pyabsa.networks.losses.R2Loss import R2Loss
 from pyabsa.utils.file_utils.file_utils import save_model
 from pyabsa.utils.pyabsa_utils import init_optimizer, fprint
-from ..dataset_utils.__classic__.data_utils_for_training import GloVeProteinRDataset
-from ..dataset_utils.__plm__.data_utils_for_training import BERTProteinRDataset
+from ..dataset_utils.classic.data_utils_for_training import GloVeProteinRDataset
+from ..dataset_utils.plm.data_utils_for_training import BERTProteinRDataset
 from ..models import GloVeProteinRModelList, BERTProteinRModelList
 
 
