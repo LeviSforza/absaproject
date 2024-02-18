@@ -9,10 +9,10 @@
 
 
 class GloVeRNACModelList(list):
-    from .__classic__.cnn import CNN
-    from .__classic__.lstm import LSTM
-    from .__classic__.transformer import Transformer
-    from .__classic__.mhsa import MHSA
+    from .classic.cnn import CNN
+    from .classic.lstm import LSTM
+    from .classic.transformer import Transformer
+    from .classic.mhsa import MHSA
 
     CNN = CNN
     LSTM = LSTM
@@ -26,7 +26,7 @@ class GloVeRNACModelList(list):
 
 
 class BERTRNACModelList(list):
-    from .__plm__.bert import BERT_MLP
+    from .plm.bert import BERT_MLP
 
     BERT_MLP = BERT_MLP
 

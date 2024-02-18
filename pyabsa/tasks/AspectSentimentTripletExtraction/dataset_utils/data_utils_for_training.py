@@ -9,7 +9,7 @@ from collections import Counter, OrderedDict
 from multiprocessing import Pool
 
 import tqdm
-from pyabsa.tasks.AspectPolarityClassification.dataset_utils.__lcf__.apc_utils import (
+from pyabsa.tasks.AspectPolarityClassification.dataset_utils.lcf.apc_utils import (
     configure_spacy_model,
 )
 

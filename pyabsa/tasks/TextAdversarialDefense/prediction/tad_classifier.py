@@ -18,10 +18,10 @@ from transformers import AutoModel
 
 from pyabsa import TaskCodeOption, DeviceTypeOption
 from pyabsa.framework.prediction_class.predictor_template import InferenceModel
-from ..dataset_utils.__classic__.data_utils_for_inference import (
+from ..dataset_utils.classic.data_utils_for_inference import (
     GloVeTADInferenceDataset,
 )
-from ..dataset_utils.__plm__.data_utils_for_inference import BERTTADInferenceDataset
+from ..dataset_utils.plm.data_utils_for_inference import BERTTADInferenceDataset
 from ..models import BERTTADModelList, GloVeTADModelList
 from pyabsa.utils.data_utils.dataset_manager import detect_infer_dataset
 from pyabsa.utils.pyabsa_utils import set_device, print_args, fprint

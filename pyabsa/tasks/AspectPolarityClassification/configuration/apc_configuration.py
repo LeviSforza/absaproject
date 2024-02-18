@@ -10,8 +10,8 @@
 
 import copy
 
-from ..models.__plm__.tnet_lf_bert import TNet_LF_BERT
-from ..models.__classic__.tnet_lf import TNet_LF
+from ..models.plm.tnet_lf_bert import TNet_LF_BERT
+from ..models.classic.tnet_lf import TNet_LF
 
 from ..models import APCModelList
 

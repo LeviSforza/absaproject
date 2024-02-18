@@ -9,7 +9,7 @@
 import re
 import string
 
-from pyabsa.tasks.AspectPolarityClassification.dataset_utils.__lcf__.apc_utils import (
+from pyabsa.tasks.AspectPolarityClassification.dataset_utils.lcf.apc_utils import (
     get_syntax_distance,
     get_lca_ids_and_cdm_vec,
     get_cdw_vec,

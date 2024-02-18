@@ -17,10 +17,10 @@ from pyabsa.framework.prediction_class.predictor_template import InferenceModel
 from pyabsa.framework.tokenizer_class.tokenizer_class import PretrainedTokenizer
 from pyabsa.utils.data_utils.dataset_manager import detect_infer_dataset
 from pyabsa.utils.pyabsa_utils import set_device, print_args, fprint, rprint
-from ..dataset_utils.__classic__.data_utils_for_inference import (
+from ..dataset_utils.classic.data_utils_for_inference import (
     GloVeCDDInferenceDataset,
 )
-from ..dataset_utils.__plm__.data_utils_for_inference import BERTCDDInferenceDataset
+from ..dataset_utils.plm.data_utils_for_inference import BERTCDDInferenceDataset
 from ..models import BERTCDDModelList, GloVeCDDModelList
 
 

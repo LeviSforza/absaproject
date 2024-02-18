@@ -7,6 +7,6 @@
 # ResearchGate: https://www.researchgate.net/profile/Heng-Yang-17/research
 # Copyright (C) 2022. All Rights Reserved.
 
-from .__classic__ import *
-from .__lcf__ import *
-from .__plm__ import *
+from .classic import *
+from .lcf import *
+from .plm import *

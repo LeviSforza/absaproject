@@ -19,9 +19,9 @@ from sklearn import metrics
 
 from pyabsa import TaskCodeOption, LabelPaddingOption, DeviceTypeOption
 from pyabsa.framework.prediction_class.predictor_template import InferenceModel
-from ..dataset_utils.__plm__.data_utils_for_inference import BERTTCInferenceDataset
+from ..dataset_utils.plm.data_utils_for_inference import BERTTCInferenceDataset
 from ..models import BERTTCModelList, GloVeTCModelList
-from ..dataset_utils.__classic__.data_utils_for_inference import GloVeTCInferenceDataset
+from ..dataset_utils.classic.data_utils_for_inference import GloVeTCInferenceDataset
 from pyabsa.utils.data_utils.dataset_manager import detect_infer_dataset
 from pyabsa.utils.pyabsa_utils import set_device, print_args, fprint, rprint
 

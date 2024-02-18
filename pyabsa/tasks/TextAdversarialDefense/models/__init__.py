@@ -9,7 +9,7 @@
 
 
 class BERTTADModelList(list):
-    from .__plm__.tad_bert import TADBERT
+    from .plm.tad_bert import TADBERT
 
     TADBERT = TADBERT
 
@@ -18,7 +18,7 @@ class BERTTADModelList(list):
 
 
 class GloVeTADModelList(list):
-    from .__classic__.tad_lstm import TADLSTM
+    from .classic.tad_lstm import TADLSTM
 
     TADLSTM = TADLSTM
 

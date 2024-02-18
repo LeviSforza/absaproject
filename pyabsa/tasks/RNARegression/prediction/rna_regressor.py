@@ -23,8 +23,8 @@ from pyabsa.framework.tokenizer_class.tokenizer_class import (
 )
 from pyabsa.utils.data_utils.dataset_manager import detect_infer_dataset
 from pyabsa.utils.pyabsa_utils import set_device, print_args, fprint
-from ..dataset_utils.__classic__.data_utils_for_inference import GloVeRNARDataset
-from ..dataset_utils.__plm__.data_utils_for_inference import BERTRNARDataset
+from ..dataset_utils.classic.data_utils_for_inference import GloVeRNARDataset
+from ..dataset_utils.plm.data_utils_for_inference import BERTRNARDataset
 from ..models import BERTRNARModelList, GloVeRNARModelList
 
 

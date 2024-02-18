@@ -20,12 +20,12 @@ from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from transformers import AutoTokenizer, AutoModel
 
 from pyabsa.utils.pyabsa_utils import fprint
-from ..models.__classic__ import GloVeAPCModelList
-from ..models.__lcf__ import APCModelList
-from ..models.__plm__ import BERTBaselineAPCModelList
-from ..dataset_utils.__classic__.data_utils_for_training import GloVeABSADataset
-from ..dataset_utils.__lcf__.data_utils_for_training import ABSADataset
-from ..dataset_utils.__plm__.data_utils_for_training import BERTBaselineABSADataset
+from ..models.classic import GloVeAPCModelList
+from ..models.lcf import APCModelList
+from ..models.plm import BERTBaselineAPCModelList
+from ..dataset_utils.classic.data_utils_for_training import GloVeABSADataset
+from ..dataset_utils.lcf.data_utils_for_training import ABSADataset
+from ..dataset_utils.plm.data_utils_for_training import BERTBaselineABSADataset
 from pyabsa.framework.tokenizer_class.tokenizer_class import (
     PretrainedTokenizer,
     Tokenizer,

@@ -23,7 +23,7 @@ from transformers import AutoTokenizer, AutoModel
 
 from pyabsa.framework.flag_class.flag_template import DeviceTypeOption
 from pyabsa.framework.instructor_class.instructor_template import BaseTrainingInstructor
-from ..dataset_utils.__lcf__.data_utils_for_training import (
+from ..dataset_utils.lcf.data_utils_for_training import (
     ATEPCProcessor,
     convert_examples_to_features,
 )

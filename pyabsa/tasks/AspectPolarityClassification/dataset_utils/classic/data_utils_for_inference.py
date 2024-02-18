@@ -15,7 +15,7 @@ from pyabsa.framework.dataset_class.dataset_template import PyABSADataset
 from pyabsa.utils.pyabsa_utils import validate_absa_example, fprint
 from .classic_glove_apc_utils import build_sentiment_window
 from .dependency_graph import dependency_adj_matrix, configure_spacy_model
-from ..__lcf__.data_utils_for_inference import ABSAInferenceDataset
+from ..lcf.data_utils_for_inference import ABSAInferenceDataset
 
 
 class GloVeABSAInferenceDataset(ABSAInferenceDataset):

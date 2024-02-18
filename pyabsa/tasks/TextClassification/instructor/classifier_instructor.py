@@ -29,8 +29,8 @@ from pyabsa.framework.tokenizer_class.tokenizer_class import (
 )
 from pyabsa.utils.file_utils.file_utils import save_model
 from pyabsa.utils.pyabsa_utils import init_optimizer, fprint, rprint
-from ..dataset_utils.__classic__.data_utils_for_training import GloVeTCDataset
-from ..dataset_utils.__plm__.data_utils_for_training import BERTTCDataset
+from ..dataset_utils.classic.data_utils_for_training import GloVeTCDataset
+from ..dataset_utils.plm.data_utils_for_training import BERTTCDataset
 from ..models import GloVeTCModelList, BERTTCModelList
 
 

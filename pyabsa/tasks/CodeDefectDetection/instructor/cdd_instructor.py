@@ -20,8 +20,8 @@ from tqdm import tqdm
 
 from pyabsa.framework.flag_class.flag_template import DeviceTypeOption
 from pyabsa.framework.instructor_class.instructor_template import BaseTrainingInstructor
-from ..dataset_utils.__classic__.data_utils_for_training import GloVeCDDDataset
-from ..dataset_utils.__plm__.data_utils_for_training import BERTCDDDataset
+from ..dataset_utils.classic.data_utils_for_training import GloVeCDDDataset
+from ..dataset_utils.plm.data_utils_for_training import BERTCDDDataset
 from ..models import GloVeCDDModelList, BERTCDDModelList
 
 from pyabsa.utils.file_utils.file_utils import save_model

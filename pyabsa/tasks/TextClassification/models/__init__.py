@@ -9,7 +9,7 @@
 
 
 class BERTTCModelList(list):
-    from .__plm__.bert import BERT_MLP
+    from .plm.bert import BERT_MLP
 
     BERT_MLP = BERT_MLP
     BERT = BERT_MLP
@@ -19,7 +19,7 @@ class BERTTCModelList(list):
 
 
 class GloVeTCModelList(list):
-    from .__classic__.lstm import LSTM
+    from .classic.lstm import LSTM
 
     LSTM = LSTM
 

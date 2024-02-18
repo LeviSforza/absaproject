@@ -12,7 +12,7 @@ import os
 import findfile
 
 from pyabsa import LabelPaddingOption, TaskCodeOption
-from pyabsa.tasks.AspectTermExtraction.dataset_utils.__lcf__.atepc_utils import (
+from pyabsa.tasks.AspectTermExtraction.dataset_utils.lcf.atepc_utils import (
     simple_split_text,
 )
 from pyabsa.utils.data_utils.dataset_item import DatasetItem

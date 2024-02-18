@@ -9,14 +9,14 @@
 
 
 class ATEPCModelList(list):
-    from .__lcf__.bert_base_atepc import BERT_BASE_ATEPC
-    from .__lcf__.fast_lcf_atepc import FAST_LCF_ATEPC
-    from .__lcf__.fast_lcfs_atepc import FAST_LCFS_ATEPC
-    from .__lcf__.lcf_atepc import LCF_ATEPC
-    from .__lcf__.lcf_atepc_large import LCF_ATEPC_LARGE
-    from .__lcf__.lcf_template_atepc import LCF_TEMPLATE_ATEPC
-    from .__lcf__.lcfs_atepc import LCFS_ATEPC
-    from .__lcf__.lcfs_atepc_large import LCFS_ATEPC_LARGE
+    from .lcf.bert_base_atepc import BERT_BASE_ATEPC
+    from .lcf.fast_lcf_atepc import FAST_LCF_ATEPC
+    from .lcf.fast_lcfs_atepc import FAST_LCFS_ATEPC
+    from .lcf.lcf_atepc import LCF_ATEPC
+    from .lcf.lcf_atepc_large import LCF_ATEPC_LARGE
+    from .lcf.lcf_template_atepc import LCF_TEMPLATE_ATEPC
+    from .lcf.lcfs_atepc import LCFS_ATEPC
+    from .lcf.lcfs_atepc_large import LCFS_ATEPC_LARGE
 
     BERT_BASE_ATEPC = BERT_BASE_ATEPC
     FAST_LCF_ATEPC = FAST_LCF_ATEPC

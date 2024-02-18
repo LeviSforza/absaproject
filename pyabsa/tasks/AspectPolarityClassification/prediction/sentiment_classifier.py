@@ -21,14 +21,14 @@ from pyabsa.framework.flag_class.flag_template import (
     DeviceTypeOption,
 )
 from pyabsa.framework.prediction_class.predictor_template import InferenceModel
-from ..models.__plm__ import BERTBaselineAPCModelList
-from ..models.__classic__ import GloVeAPCModelList
-from ..models.__lcf__ import APCModelList
-from ..dataset_utils.__classic__.data_utils_for_inference import (
+from ..models.plm import BERTBaselineAPCModelList
+from ..models.classic import GloVeAPCModelList
+from ..models.lcf import APCModelList
+from ..dataset_utils.classic.data_utils_for_inference import (
     GloVeABSAInferenceDataset,
 )
-from ..dataset_utils.__lcf__.data_utils_for_inference import ABSAInferenceDataset
-from ..dataset_utils.__plm__.data_utils_for_inference import BERTABSAInferenceDataset
+from ..dataset_utils.lcf.data_utils_for_inference import ABSAInferenceDataset
+from ..dataset_utils.plm.data_utils_for_inference import BERTABSAInferenceDataset
 from ..instructor.ensembler import APCEnsembler
 from pyabsa.utils.data_utils.dataset_manager import detect_infer_dataset
 from pyabsa.utils.pyabsa_utils import set_device, print_args, fprint, rprint

@@ -11,7 +11,7 @@ from collections import Counter, OrderedDict
 
 import numpy as np
 import tqdm
-from pyabsa.tasks.AspectPolarityClassification.dataset_utils.__lcf__.apc_utils import (
+from pyabsa.tasks.AspectPolarityClassification.dataset_utils.lcf.apc_utils import (
     configure_spacy_model,
 )
 from ..dataset_utils.aste_utils import (

@@ -8,10 +8,10 @@ import numpy as np
 import tqdm
 
 from pyabsa.framework.flag_class.flag_template import LabelPaddingOption
-from pyabsa.tasks.AspectPolarityClassification.dataset_utils.__lcf__.apc_utils import (
+from pyabsa.tasks.AspectPolarityClassification.dataset_utils.lcf.apc_utils import (
     configure_spacy_model,
 )
-from ...dataset_utils.__lcf__.atepc_utils import (
+from ...dataset_utils.lcf.atepc_utils import (
     simple_split_text,
     prepare_input_for_atepc,
 )
