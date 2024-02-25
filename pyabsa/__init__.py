@@ -7,7 +7,7 @@
 # Copyright (C) 2021. All Rights Reserved.
 
 __name__ = "pyabsa"
-__version__ = "2.3.4"
+__version__ = "1.0.0"
 
 
 from pyabsa.utils.notification_utils.notification_utils import (
@@ -36,16 +36,16 @@ from pyabsa.framework.checkpoint_class.checkpoint_utils import (
     download_checkpoint,
 )
 from pyabsa.framework.dataset_class.dataset_dict_class import DatasetDict
-from pyabsa.tasks import (
-    AspectPolarityClassification,
-    AspectTermExtraction,
-    AspectSentimentTripletExtraction,
-    TextClassification,
-    TextAdversarialDefense,
-    RNAClassification,
-    RNARegression,
-    ABSAInstruction,
-)
+# from pyabsa.tasks import (
+#     AspectPolarityClassification,
+#     AspectTermExtraction,
+#     AspectSentimentTripletExtraction,
+#     TextClassification,
+#     TextAdversarialDefense,
+#     RNAClassification,
+#     RNARegression,
+#     ABSAInstruction,
+# )
 
 # for compatibility of v1.x
 from pyabsa.framework.checkpoint_class.checkpoint_template import (
