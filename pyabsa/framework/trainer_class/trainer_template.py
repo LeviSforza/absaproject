@@ -106,8 +106,11 @@ def init_config(config):
 
     # set up logging
     config.logger = get_logger(
-        os.getcwd(), log_name=config.model_name, log_type="trainer"
+        "/kaggle/working", log_name=config.model_name, log_type="trainer"
     )
+    # config.logger = get_logger(
+    #     os.getcwd(), log_name=config.model_name, log_type="trainer"
+    # )
     config.logger.info("PyABSA version: {}".format(config.PyABSAVersion))
     config.logger.info("Transformers version: {}".format(config.TransformersVersion))
     config.logger.info("Torch version: {}".format(config.TorchVersion))
