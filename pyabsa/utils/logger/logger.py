@@ -24,10 +24,10 @@ def get_logger(log_path, log_name="", log_type="training_log"):
     Returns:
         logger: A configured logger object.
     """
-    if not log_path:
-        log_dir = os.path.join(log_path, "logs")
-    else:
-        log_dir = os.path.join(".", "logs")
+    # if not log_path:
+    log_dir = os.path.join(log_path, "logs")
+    # else:
+    #     log_dir = os.path.join(".", "logs")
 
     full_path = os.path.join(log_dir, log_name + "_" + today)
     if not os.path.exists(full_path):
