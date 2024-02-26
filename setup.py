@@ -11,6 +11,7 @@ from pyabsa import __name__, __version__
 from pathlib import Path
 
 cwd = Path(__file__).parent
+long_description = (cwd / "README.md").read_text(encoding="utf8")
 
 extras = {}
 # Packages required for installing docs.
@@ -67,7 +68,7 @@ setup(
     version=__version__,
     description="This tool provides the state-of-the-art models for aspect term extraction (ATE), "
     "aspect polarity classification (APC), and text classification (TC).",
-    long_description=long_description,
+    long_description="This is long description",
     long_description_content_type="text/markdown",
     url="https://github.com/yangheng95/PyABSA",
     # Author details
