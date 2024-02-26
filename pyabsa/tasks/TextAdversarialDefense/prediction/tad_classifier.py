@@ -16,7 +16,7 @@ from termcolor import colored
 from torch.utils.data import DataLoader
 from transformers import AutoModel
 
-from pyabsa import TaskCodeOption, DeviceTypeOption
+from pyabsa.framework.flag_class.flag_template import TaskCodeOption, DeviceTypeOption
 from pyabsa.framework.prediction_class.predictor_template import InferenceModel
 from ..dataset_utils.classic.data_utils_for_inference import (
     GloVeTADInferenceDataset,
