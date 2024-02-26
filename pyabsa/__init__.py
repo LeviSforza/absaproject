@@ -9,7 +9,6 @@
 __name__ = "pyabsa"
 __version__ = "2.4.6"
 
-
 from pyabsa.utils.notification_utils.notification_utils import (
     check_emergency_notification,
 )
@@ -30,7 +29,6 @@ from pyabsa.utils.data_utils.dataset_manager import (
 )
 from pyabsa.utils.file_utils.file_utils import load_dataset_from_file
 
-
 from pyabsa.framework.checkpoint_class.checkpoint_utils import (
     available_checkpoints,
     download_checkpoint,
@@ -42,8 +40,6 @@ from pyabsa.tasks import (
     AspectSentimentTripletExtraction,
     TextClassification,
     TextAdversarialDefense,
-    # RNAClassification,
-    # RNARegression,
     ABSAInstruction,
 )
 
@@ -53,9 +49,7 @@ from pyabsa.framework.checkpoint_class.checkpoint_template import (
     ATEPCCheckpointManager,
     ASTECheckpointManager,
     TCCheckpointManager,
-    TADCheckpointManager,
-    RNACCheckpointManager,
-    RNARCheckpointManager,
+    TADCheckpointManager
 )
 from pyabsa.tasks.AspectPolarityClassification import APCDatasetList
 

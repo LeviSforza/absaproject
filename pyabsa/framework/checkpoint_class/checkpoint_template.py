@@ -24,8 +24,7 @@ from pyabsa.utils.pyabsa_utils import fprint
 from pyabsa.tasks.AspectPolarityClassification import SentimentClassifier
 from pyabsa.tasks.AspectTermExtraction import AspectExtractor
 from pyabsa.tasks.TextAdversarialDefense import TADTextClassifier
-from pyabsa.tasks.RNAClassification import RNAClassifier
-from pyabsa.tasks.RNARegression import RNARegressor
+
 from pyabsa.tasks.TextClassification import TextClassifier
 from pyabsa.tasks.AspectSentimentTripletExtraction import (
     AspectSentimentTripletExtractor,
@@ -34,9 +33,9 @@ from pyabsa.tasks.AspectSentimentTripletExtraction import (
 
 class CheckpointManager:
     def parse_checkpoint(
-        self,
-        checkpoint: Union[str, Path] = None,
-        task_code: str = TaskCodeOption.Aspect_Polarity_Classification,
+            self,
+            checkpoint: Union[str, Path] = None,
+            task_code: str = TaskCodeOption.Aspect_Polarity_Classification,
     ) -> Union[str, Path]:
         """
         Parse a given checkpoint file path or name and returns the path of the checkpoint directory.
@@ -88,7 +87,7 @@ class CheckpointManager:
         return checkpoint
 
     def _get_remote_checkpoint(
-        self, checkpoint: str = "multilingual", task_code: str = None
+            self, checkpoint: str = "multilingual", task_code: str = None
     ) -> str:
         """
         Downloads a checkpoint file and returns the path of the downloaded checkpoint.
@@ -143,7 +142,7 @@ class ASTECheckpointManager(CheckpointManager):
 
     @staticmethod
     def get_aspect_sentiment_triplet_extractor(
-        checkpoint: Union[str, Path] = None, **kwargs
+            checkpoint: Union[str, Path] = None, **kwargs
     ) -> "AspectSentimentTripletExtractor":
         """
         Get an AspectExtractor object initialized with the given checkpoint for Aspect Sentiment Term Extraction.
@@ -169,7 +168,7 @@ class APCCheckpointManager(CheckpointManager):
 
     @staticmethod
     def get_sentiment_classifier(
-        checkpoint: Union[str, Path] = None, **kwargs
+            checkpoint: Union[str, Path] = None, **kwargs
     ) -> "SentimentClassifier":
         """
         Returns a pre-trained aspect sentiment classification model.
@@ -209,7 +208,7 @@ class ATEPCCheckpointManager(CheckpointManager):
 
     @staticmethod
     def get_aspect_extractor(
-        checkpoint: Union[str, Path] = None, **kwargs
+            checkpoint: Union[str, Path] = None, **kwargs
     ) -> "AspectExtractor":
         """
         Get an AspectExtractor object initialized with the given checkpoint for Aspect Term Extraction and Polarity Classification.
@@ -239,7 +238,7 @@ class TADCheckpointManager(CheckpointManager):
         super(TADCheckpointManager, self).__init__()
 
     def get_tad_text_classifier(
-        checkpoint: Union[str, Path] = None, **kwargs
+            checkpoint: Union[str, Path] = None, **kwargs
     ) -> "TADTextClassifier":
         """
         Return a TADTextClassifier object initialized with the specified checkpoint.
@@ -259,77 +258,6 @@ class TADCheckpointManager(CheckpointManager):
         )
 
 
-class RNACCheckpointManager(CheckpointManager):
-    """
-    This class manages the checkpoints for RNA sequence classification.
-    """
-
-    def __init__(self):
-        """
-        Initializes an instance of the RNACCheckpointManager class.
-        """
-        super(RNACCheckpointManager, self).__init__()
-
-    @staticmethod
-    def get_rna_classifier(
-        checkpoint: Union[str, Path] = None, **kwargs
-    ) -> "RNAClassifier":
-        """
-        This method returns an instance of the RNAClassifier class with a parsed checkpoint for RNA sequence classification.
-
-        Args:
-            checkpoint (Union[str, Path], optional): The name of the zipped checkpoint or the path to the checkpoint file. If not provided, the default checkpoint will be used. Defaults to None.
-            **kwargs: Additional keyword arguments.
-
-        Returns:
-            RNAClassifier: An instance of the RNAClassifier class with a parsed checkpoint for RNA sequence classification.
-
-        Raises:
-            ValueError: If the provided checkpoint is not found.
-        """
-
-        return RNAClassifier(
-            CheckpointManager().parse_checkpoint(
-                checkpoint, TaskCodeOption.RNASequenceClassification
-            )
-        )
-
-
-class RNARCheckpointManager(CheckpointManager):
-    """
-    This class manages the checkpoints for RNA sequence regression.
-    """
-
-    def __init__(self):
-        """
-        Initializes an instance of the RNARCheckpointManager class.
-        """
-        super(RNARCheckpointManager, self).__init__()
-
-    @staticmethod
-    def get_rna_regressor(
-        checkpoint: Union[str, Path] = None, **kwargs
-    ) -> "RNARegressor":
-        """
-        Loads a pre-trained checkpoint for RNA sequence regression and returns an instance of the RNARegressor class
-        that is ready to make predictions.
-
-        :param checkpoint: (Optional) The name of a zipped checkpoint file, the path to a checkpoint file, or the name of
-            a checkpoint file that can be found in Google Drive. If `checkpoint` is not provided, the default checkpoint
-            for RNA sequence regression will be loaded.
-        :type checkpoint: Union[str, Path]
-
-        :return: An instance of the RNARegressor class that has been initialized with the specified checkpoint file.
-        :rtype: RNARegressor
-        """
-
-        return RNARegressor(
-            CheckpointManager().parse_checkpoint(
-                checkpoint, TaskCodeOption.RNASequenceRegression
-            )
-        )
-
-
 class TCCheckpointManager(CheckpointManager):
     """
     This class manages the checkpoints for text classification.
@@ -343,7 +271,7 @@ class TCCheckpointManager(CheckpointManager):
 
     @staticmethod
     def get_text_classifier(
-        checkpoint: Union[str, Path] = None, **kwargs
+            checkpoint: Union[str, Path] = None, **kwargs
     ) -> "TextClassifier":
         """
         Returns a TextClassifier instance loaded with a pre-trained checkpoint for text classification.
