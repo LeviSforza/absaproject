@@ -8,9 +8,7 @@
 from setuptools import setup, find_packages
 
 from pyabsa import __name__, __version__
-from pathlib import Path
 
-cwd = Path(__file__).parent
 long_description = "This is long description!"
 
 extras = {}

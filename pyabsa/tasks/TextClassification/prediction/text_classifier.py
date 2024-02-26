@@ -17,7 +17,7 @@ from transformers import AutoModel
 
 from sklearn import metrics
 
-from pyabsa import TaskCodeOption, LabelPaddingOption, DeviceTypeOption
+from pyabsa.framework.flag_class.flag_template import TaskCodeOption, LabelPaddingOption, DeviceTypeOption
 from pyabsa.framework.prediction_class.predictor_template import InferenceModel
 from ..dataset_utils.plm.data_utils_for_inference import BERTTCInferenceDataset
 from ..models import BERTTCModelList, GloVeTCModelList
