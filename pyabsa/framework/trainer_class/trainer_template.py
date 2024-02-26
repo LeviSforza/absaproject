@@ -19,7 +19,7 @@ from torch import cuda
 from transformers import AutoConfig
 
 from pyabsa import __version__ as PyABSAVersion
-from ..configuration_class.config_verification import config_check
+from pyabsa.framework.configuration_class.config_verification import config_check
 from ..dataset_class.dataset_dict_class import DatasetDict
 
 from ..flag_class.flag_template import DeviceTypeOption, ModelSaveOption
